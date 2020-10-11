@@ -22,7 +22,7 @@ def CreateAccount(name, Dob, Phone, aadhaar, father, address, amount, password=G
     with open(f"PassBooks/{aadhaar}.txt",'a+') as file:
         file.write(f"Account Number:{aadhaar}\n\n")
     cursor.execute(f"Insert into accounts values('{name}', '{Dob}', {Phone}, {aadhaar}, '{father}', '{password}', \
-                   '{address}', 'C:/Users/progr/Desktop/Bank/Backend/PassBooks/{aadhaar}.txt'\
+                   '{address}', 'PassBooks/{aadhaar}.txt'\
                    , {amount})")
     sql.commit()
     return password
