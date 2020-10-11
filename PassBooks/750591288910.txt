@@ -1,0 +1,5 @@
+Account Number:750591288910
+At Date-Time: 2020-10-11 21:49:30.609230		Amount credited: 3100
+		Current Balance:40000
+At Date-Time: 2020-10-11 21:54:50.907370		Amount debited: 20000
+		Current Balance:20000
