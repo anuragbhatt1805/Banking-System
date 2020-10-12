@@ -41,7 +41,7 @@ def start_transaction(aadhar, Amount):
 
     Label(Frame1, text="Transaction Amount: ", padx=5, pady=2, font='arial 12 bold', bg='yellow2').grid(row=1, column=0)
     value = Entry(Frame1, font='arial 10')
-    value.grid(row=1, column=2, padx=5, pady=6)
+    value.grid(row=1, column=1, padx=5, pady=6)
     Frame1.pack(pady=15, side=TOP)
 
     Frame_B = Frame(root, bg="white")
