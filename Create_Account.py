@@ -9,7 +9,7 @@ from tkinter import messagebox
 def acc_create():
     if len(Name.get())>0 and len(father_name.get())>0 and len(Phone.get())==10 and len(address.get())>0:
         if len(Aadhar.get())==12:
-            if Amount.get()>1000:
+            if int(Amount.get())>1000:
                 Create = SQLCommand.CreateAccount(Name.get(), dob.get(), Phone.get(), Aadhar.get(), father_name.get(), address.get(), Amount.get(), password.get())
                 messagebox.showinfo("Details", f"USer ID:\t{Aadhar.get()}\nPassword:{Create}")
                 root.destroy()
